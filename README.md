@@ -1,7 +1,9 @@
 # Commands-and-others
 Repository to remembers commands and other problematic things
 
-Removing mysql completely and then reinstall it (* remember that this can be problematic to dbs within the mysql): 
+Removing mysql completely and then reinstall it (* remember that this can be problematic to dbs within the mysql, and will remove workbench):
+
+```
 sudo systemctl stop mysql;
 sudo apt-get remove mysql-client-8.0 mysql-client-core-8.0 mysql-common mysql-server mysql-server-8.0 mysql-server-core-8.0; # using * wildcard didn't work
 sudo apt-get purge mysql-client-8.0 mysql-client-core-8.0 mysql-common mysql-server mysql-server-8.0 mysql-server-core-8.0;
@@ -10,3 +12,4 @@ sudo apt-get autoremove;
 sudo apt-get autoclean;
 sudo apt update;
 sudo apt install mysql-server;
+```
